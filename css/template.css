@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Font styles */
+@import 'fonts.css';
+
+/* Global HTML tags styles */
+@import 'global.css';
+
+/* Customize Bootstrap class styles */
+@import 'bootstrap-styles.css';
+
+/* Standard class styles for Wordpress */
+@import 'wordpress-styles.css';
+
+/* Theme styles */
+@import 'theme.css';

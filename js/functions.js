@@ -1,0 +1,1 @@
+function get_scroll_position(){return window.pageYOffset||document.documentElement.scrollTop}

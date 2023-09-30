@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*
+ * StudioWeb Theme v1.0 (http://studioweb.art.br/theme)
+ * Copyright 2012-2015 StudioWeb Mídia Integrada.
+ * Description: Font styles
+ */
+
+/* Open Sans (http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans)
+ * Usage: font-family: 'Open Sans', sans-serif;
+ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
+
+/* Font Awesome (http://fontawesome.io)
+ * Usage: font-family: 'FontAwesome';
+ */
+@import url(font-awesome.min.css);
+
+/* Raleway
+ * Usage: font-family: 'Raleway', sans-serif;
+ */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
