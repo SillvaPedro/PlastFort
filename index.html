@@ -12,7 +12,6 @@
 <title>Plastfort - Soluções em Plásticos</title>
 
 
-
 <link rel="shortcut icon" href="favicon.ico">
 
 <link rel="canonical" href>
@@ -170,7 +169,7 @@ img.emoji {
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="page-scroll no-transition" href="#section1">Empresa</a></li>
-                    <li><a class="page-scroll no-transition" href="#section2">Produtos</a></li>
+                    <li class="dropdown"><a class="page-scroll no-transition" href="#section2">Produtos</a></li>
                     <li><a class="page-scroll no-transition" href="#section3">Fábrica</a></li>
                     <li><a class="page-scroll no-transition" href="#section4">Responsabilidade</a></li>
                     <li><a class="page-scroll no-transition" href="#section5">Orçamento</a></li>
@@ -708,15 +707,27 @@ img.emoji {
 
 <div class="form-group telefone"><input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" name="telefone" type="text" value placeholder="Telefone*" aria-invalid="false" aria-required="true" required></div>
 
-<div class="form-group produto"><input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" name="produto" type="text" value placeholder="Produto*" aria-invalid="false" aria-required="true" required></div>
-
+<div class="form-group produto"><select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required form-control" name="produto" aria-invalid="false" aria-required="true" required><option value selected>Tipo de Produto</option>
+    
+    <option value="saco">Saco</option>
+    <option value="sacopalhaco">Saco Boca de Palhaço</option>
+    <option value="sacola">Sacola Camiseta</option>
+    <option value="stretch">Filme Stretch</option>
+    <option value="contratil">Filme Contrátil</option>
+    <option value="laminado">Filme Laminado</option>
+    <option value="Tubular">Filme Tubular</option>
+    <option value="bobina">Bobina Picotada</option>
+    <option value="reciclado">Reciclados</option>
+    <option value="enfardadeira">Enfardadeira</option>
+</select>
+</div>
 </div>
 
 <div class="col-md-6">
 
-<div class="form-group impressao"><select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required form-control" name="impressao" aria-invalid="false" aria-required="true" required><option value selected>Tipo de Impressão*</option><option value="Liso">Liso</option><option value="Impresso">Impresso</option></select></div>
+<div class="form-group impressao"><select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required form-control" name="impressao" aria-invalid="false" aria-required="true" required><option value selected>Tipo de Impressão*</option><option value="Liso">Liso</option><option value="Impresso">Impresso</option><option value="pigmentado">Pigmentado</option></select></div>
 
-<div class="form-group quantidade"><input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" name="quantidade" type="text" value placeholder="Quantidade*" aria-invalid="false" aria-required="true" required></div>
+<div class="form-group quantidade"><input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" name="quantidade" type="number" id="numeroInput" min="500" max="30000" required value placeholder="Quantidade (Min. 500kg)" aria-invalid="false" aria-required="true" required></div>
 
 <div class="form-group medidas"><input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" name="medidas" type="text" value placeholder="Medidas*" aria-invalid="false" aria-required="true" required></div>
 
@@ -938,6 +949,19 @@ wm_campaign_key='campaign_id';
 wm_track_alt='';
 wiredminds.count();
 // -->
+
+document.getElementById("numeroForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var numero = parseInt(document.getElementById("numeroInput").value);
+    var mensagem = document.getElementById("mensagem");
+
+    if (!isNaN(numero) && numero >= 500 && numero <= 30000) {
+        mensagem.innerHTML = "Número válido: " + numero;
+        // Faça algo com o número válido aqui, se desejar
+    } else {
+        mensagem.innerHTML = "Quantidade Minima de Pedido Não Atendida.";
+    }
+});
 </script>
 <!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
 </body></html>
