@@ -1,312 +1,395 @@
-<!DOCTYPE html><html lang="pt-br" class><head>
+<!DOCTYPE html>
+<html lang="pt-br" class>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content>
-<meta name="web_author" content>
-<meta name="title" content>
-<meta name="description" content>
-<meta name="keywords" content>
+<head>
 
-<title>Plastfort - Soluções em Plásticos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content>
+    <meta name="web_author" content>
+    <meta name="title" content>
+    <meta name="description" content>
+    <meta name="keywords" content>
 
-<link rel="shortcut icon" href="favicon.ico">
+    <title>Plastfort - Soluções em Plásticos</title>
 
-<link rel="canonical" href>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="http://plastfort.com/xmlrpc.php">
+    <link rel="shortcut icon" href="favicon.ico">
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!--link rel="stylesheet" href="css/bootstrap-theme.min.css"-->
-<link rel="stylesheet" href="css/jquery.smartmenus.bootstrap.css">
-<link rel="stylesheet" href="css/layerslider.css">
-<link rel="stylesheet" href="css/banner-espaço.css">
-<link rel="stylesheet" href="css/template.css">
+    <link rel="canonical" href>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="http://plastfort.com/xmlrpc.php">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--link rel="stylesheet" href="css/bootstrap-theme.min.css"-->
+    <link rel="stylesheet" href="css/jquery.smartmenus.bootstrap.css">
+    <link rel="stylesheet" href="css/layerslider.css">
+    <link rel="stylesheet" href="css/banner-espaço.css">
+    <link rel="stylesheet" href="css/template.css">
 
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.smartmenus.min.js"></script>
-<script src="js/jquery.smartmenus.bootstrap.min.js"></script>
-<!--script src="js/jqBootstrapValidation.js"></script-->
-<script src="js/greensock.js"></script>
-<script src="js/layerslider.transitions.js"></script>
-<script src="js/layerslider.kreaturamedia.jquery.js"></script>
-<script src="js/scrollReveal.js"></script>
-<script src="js/global.js"></script>
-<script src="js/methods.js"></script>
-<script src="js/functions.js"></script>
-<script src="js/application.js"></script>
-<script src="js/helpers.js"></script>
-<script src="js/theme.js"></script>
-<!--script src="js/include/swiffy.runtime.js"></script-->
-<script src="js/holder.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.smartmenus.min.js"></script>
+    <script src="js/jquery.smartmenus.bootstrap.min.js"></script>
+    <!--script src="js/jqBootstrapValidation.js"></script-->
+    <script src="js/greensock.js"></script>
+    <script src="js/layerslider.transitions.js"></script>
+    <script src="js/layerslider.kreaturamedia.jquery.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/methods.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/theme.js"></script>
+    <!--script src="js/include/swiffy.runtime.js"></script-->
+    <script src="js/holder.min.js"></script>
 
-<script>
+    <script>
 
-	var FB_APPID = '';
-    var ANALYTICS_USER_ID = 'UA-75758344-1';
-    var NAVBAR_HEIGHT = 69;
-    
-	
-	$(document).ready(function() {
-		//alert(isMobile);
-        window.sr = new scrollReveal();
-        
-        $('#layerslider').layerSlider({
-            responsive: false,
-            responsiveUnder: 1920,
-            layersContainer: 1920,
-            pauseOnHover: false,
-            hoverPrevNext: false,
-            skin: 'v5', /* fullwidth, fullwidthdark */
-            skinsPath: 'js/jquery/plugins/layerslider/skins/',
-            autoPlayVideos: true,
-            showBarTimer: false,
-            showCircleTimer: true,
+        var FB_APPID = '';
+        var ANALYTICS_USER_ID = 'UA-75758344-1';
+        var NAVBAR_HEIGHT = 69;
+
+
+        $(document).ready(function () {
+            //alert(isMobile);
+            window.sr = new scrollReveal();
+
+            $('#layerslider').layerSlider({
+                responsive: false,
+                responsiveUnder: 1920,
+                layersContainer: 1920,
+                pauseOnHover: false,
+                hoverPrevNext: false,
+                skin: 'v5', /* fullwidth, fullwidthdark */
+                skinsPath: 'js/jquery/plugins/layerslider/skins/',
+                autoPlayVideos: true,
+                showBarTimer: false,
+                showCircleTimer: true,
+            });
+
+            $('#section7 form .form-group.arquivo input').remove();
+            $('#section7 form .form-group.arquivo').html('<div class="input-group"><div class="input-group-btn"><div class="btn btn-primary btn-file bg-blue-dark">Currículo... <input class="wpcf7-form-control wpcf7-file " name="arquivo" type="file" aria-invalid="false"></div></div><input type="text" class="wpcf7-form-control wpcf7-text form-control" readonly></div>' + $('#section7 form .form-group.arquivo').html());
         });
-        
-        $('#section7 form .form-group.arquivo input').remove();
-        $('#section7 form .form-group.arquivo').html('<div class="input-group"><div class="input-group-btn"><div class="btn btn-primary btn-file bg-blue-dark">Currículo... <input class="wpcf7-form-control wpcf7-file " name="arquivo" type="file" aria-invalid="false"></div></div><input type="text" class="wpcf7-form-control wpcf7-text form-control" readonly></div>' + $('#section7 form .form-group.arquivo').html());
-	});
-</script>
+    </script>
 
-<script src="js/social.js"></script>
-<script src="js/platform.js"></script><!--/ youtube -->
+    <script src="js/social.js"></script>
+    <script src="js/platform.js"></script><!--/ youtube -->
 
-<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/plastfort.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.30"}};
-			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script><script src="js/wp-emoji-release.min.js" type="text/javascript"></script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel="https://api.w.org/" href="http://plastfort.com/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://plastfort.com/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://plastfort.com/wp-includes/wlwmanifest.xml"> 
-<meta name="generator" content="WordPress 4.4.30">
-	<style type="text/css">
-		div.wpcf7 .screen-reader-response {
-			display: none;
-		}
-		div.wpcf7 img.ajax-loader {
-			border: none;
-			vertical-align: middle;
-			margin-left: 4px;
-		}
-		div.wpcf7 .form-inline img.ajax-loader {
-			display: inline;
-		}
-		div.wpcf7 div.ajax-error {
-			display: none;
-		}
-		div.wpcf7 .wpcf7-display-none {
-			display: none;
-		}
-		div.wpcf7 .form-inline .form-group {
-			max-width: 250px;
-		}
-		div.wpcf7 .input-group-addon img {
-			height: 100%;
-			width: auto;
-			max-width: none !important;
-			border-radius: 5px;
-		}
-		div.wpcf7 .input-group-addon.input-group-has-image {
-			padding: 0;
-		}
-	</style>
+    <script>(function (html) { html.className = html.className.replace(/\bno-js\b/, 'js') })(document.documentElement);</script>
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/72x72\/", "ext": ".png", "source": { "concatemoji": "http:\/\/plastfort.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.30" } };
+        !function (e, n, t) { var a; function i(e) { var t = n.createElement("canvas"), a = t.getContext && t.getContext("2d"), i = String.fromCharCode; return !(!a || !a.fillText) && (a.textBaseline = "top", a.font = "600 32px Arial", "flag" === e ? (a.fillText(i(55356, 56806, 55356, 56826), 0, 0), 3e3 < t.toDataURL().length) : "diversity" === e ? (a.fillText(i(55356, 57221), 0, 0), t = a.getImageData(16, 16, 1, 1).data, a.fillText(i(55356, 57221, 55356, 57343), 0, 0), (t = a.getImageData(16, 16, 1, 1).data)[0], t[1], t[2], t[3], !0) : ("simple" === e ? a.fillText(i(55357, 56835), 0, 0) : a.fillText(i(55356, 57135), 0, 0), 0 !== a.getImageData(16, 16, 1, 1).data[0])) } function o(e) { var t = n.createElement("script"); t.src = e, t.type = "text/javascript", n.getElementsByTagName("head")[0].appendChild(t) } t.supports = { simple: i("simple"), flag: i("flag"), unicode8: i("unicode8"), diversity: i("diversity") }, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.simple && t.supports.flag && t.supports.unicode8 && t.supports.diversity || (a = function () { t.readyCallback() }, n.addEventListener ? (n.addEventListener("DOMContentLoaded", a, !1), e.addEventListener("load", a, !1)) : (e.attachEvent("onload", a), n.attachEvent("onreadystatechange", function () { "complete" === n.readyState && t.readyCallback() })), (a = t.source || {}).concatemoji ? o(a.concatemoji) : a.wpemoji && a.twemoji && (o(a.twemoji), o(a.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <script src="js/wp-emoji-release.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="https://api.w.org/" href="http://plastfort.com/wp-json/">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://plastfort.com/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://plastfort.com/wp-includes/wlwmanifest.xml">
+    <meta name="generator" content="WordPress 4.4.30">
+    <style type="text/css">
+        div.wpcf7 .screen-reader-response {
+            display: none;
+        }
+
+        div.wpcf7 img.ajax-loader {
+            border: none;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+
+        div.wpcf7 .form-inline img.ajax-loader {
+            display: inline;
+        }
+
+        div.wpcf7 div.ajax-error {
+            display: none;
+        }
+
+        div.wpcf7 .wpcf7-display-none {
+            display: none;
+        }
+
+        div.wpcf7 .form-inline .form-group {
+            max-width: 250px;
+        }
+
+        div.wpcf7 .input-group-addon img {
+            height: 100%;
+            width: auto;
+            max-width: none !important;
+            border-radius: 5px;
+        }
+
+        div.wpcf7 .input-group-addon.input-group-has-image {
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="70" class="home blog">
-    
-<div id="scroll-top"></div>
-<div id="fb-root"></div>
 
-<a href="https://br.linkedin.com/company/plastfort-soluções-em-plástico" target="_blank" class="social-fix facebook"><i class="fa fa-linkedin fa-lg" style="color: #0240f7;"></i><span class="text">Linkedin</span></a>
-<a href="https://www.instagram.com/plastfort" target="_blank" class="social-fix instagram"><i class="fa fa-instagram fa-lg"></i><span class="text">Instagram</span></a>
+    <div id="scroll-top"></div>
+    <div id="fb-root"></div>
 
-<div class="scroll-top page-scroll visible-xs visible-sm">
-    <a class="btn bg-blue-dark page-scroll" href="#scroll-top">
-        <i class="fa fa-chevron-up"></i>
-    </a>
-</div>
+    <a href="https://br.linkedin.com/company/plastfort-soluções-em-plástico" target="_blank"
+        class="social-fix facebook"><i class="fa fa-linkedin fa-lg" style="color: #0240f7;"></i><span
+            class="text">Linkedin</span></a>
+    <a href="https://www.instagram.com/plastfort" target="_blank" class="social-fix instagram"><i
+            class="fa fa-instagram fa-lg"></i><span class="text">Instagram</span></a>
 
-<header class="theme-header container">
-    <nav class="theme-nav navbar navbar-default navbar-fixed-top"><!--/.navbar-static-top or remove -->
-        <div class="container"><!--/.container-fluid -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html"><img class="logo" src="images/logo2.png"></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll no-transition" href="#">Empresa</a></li>
-                    <li class="dropdown">
-                    <li>
-                        <a href="dropdown-toggle no-transition" href="#section2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos<span class="caret"></span></a>  
-                        <ul class="dropdown-menu">
-                        <li><a class="page-scroll no-transition" href="Filme Stretch.html">Filme Strech</a></li>
-                        <li><a class="page-scroll no-transition" href="FilmeTecnico.html">Filme Tecnico</a></li>
-                        <li><a class="page-scroll no-transition" href="FilmeContratil.html">Filme Contrátil</a></li>
-                        <li><a class="page-scroll no-transition" href="Sacaria.html">Sacaria</a></li>
-                        <li><a class="page-scroll no-transition" href="BobinaPicotada.html">Bobina Picotada</a></li>
-                        <li><a class="page-scroll no-transition" href="Enfardadeira.html">Enfardadeira</a></li>
-                        <li><a class="page-scroll no-transition" href="Material de Publicidade.html">Material de Publicidade</a></li>
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn bg-blue-dark page-scroll" href="#scroll-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
 
+    <header class="theme-header container">
+        <nav class="theme-nav navbar navbar-default navbar-fixed-top"><!--/.navbar-static-top or remove -->
+            <div class="container"><!--/.container-fluid -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="index.html"><img class="logo" src="images/logo2.png"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll no-transition" href="#">Empresa</a></li>
+                        <li class="dropdown">
+                        <li>
+                            <a href="dropdown-toggle no-transition" href="#section2" data-toggle="dropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false">Produtos<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="page-scroll no-transition" href="Filme Stretch.html">Filme Strech</a></li>
+                                <li><a class="page-scroll no-transition" href="FilmeTecnico.html">Filme Tecnico</a></li>
+                                <li><a class="page-scroll no-transition" href="FilmeContratil.html">Filme Contrátil</a>
+                                </li>
+                                <li><a class="page-scroll no-transition" href="Sacaria.html">Sacaria</a></li>
+                                <li><a class="page-scroll no-transition" href="BobinaPicotada.html">Bobina Picotada</a>
+                                </li>
+                                <li><a class="page-scroll no-transition" href="Enfardadeira.html">Enfardadeira</a></li>
+                                <li><a class="page-scroll no-transition" href="Material de Publicidade.html">Material de
+                                        Publicidade</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a class="page-scroll no-transition" href="index.html#section3">Fábrica</a></li>
+                        <li><a class="page-scroll no-transition" href="index.html#section4">Responsabilidade</a></li>
+                        <li><a class="page-scroll no-transition" href="#section5">Orçamento</a></li>
+                        <li class="dropdown">
+                            <a href class="dropdown-toggle no-transition" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Mais <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="page-scroll no-transition" href="#section6">Contato</a></li>
+                                <li><a class="page-scroll no-transition" href="#section7">Trabalhe Conosco</a></li>
+                                <li><a class="page-scroll no-transition" href="#section8">Localização</a></li>
+                                <li><a class="page-scroll no-transition"
+                                        href="https://formfacade.com/sm/mro8-ovkh">Ficha Cadastral</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                    <li><a class="page-scroll no-transition" href="index.html#section3">Fábrica</a></li>
-                    <li><a class="page-scroll no-transition" href="index.html#section4">Responsabilidade</a></li>
-                    <li><a class="page-scroll no-transition" href="#section5">Orçamento</a></li>
-                    <li class="dropdown">
-                        <a href class="dropdown-toggle no-transition" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mais <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="page-scroll no-transition" href="#section6">Contato</a></li>
-                            <li><a class="page-scroll no-transition" href="#section7">Trabalhe Conosco</a></li>
-                            <li><a class="page-scroll no-transition" href="#section8">Localização</a></li>
-                            <li><a class="page-scroll no-transition" href="https://formfacade.com/sm/mro8-ovkh">Ficha Cadastral</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
     <section id="ft-about-2" class="ft-about-section-2">
         <svg width="100%" height="150" viewBox="0 0 500 80" preserveAspectRatio="none"></svg>
         <div class="container">
             <div class="ft-about-content-2">
                 <div class="row">
-<p><span style="color: #0f8bcf; font-size: 18pt;"><span style="color: #0f8bcf;"><span style="color: #0f8bcf;"><span style="color: #0f8bcf;"><strong><span style="color: #0f8bcf;">FILMES STRETCH&nbsp;</span></strong></span></span></span></span></p>
-<p class="p1"><span><span style="font-size: 14pt;"></span><span style="font-size: 14pt;">Nós da</span><span style="font-size: 14pt;"> PLASTFORT, estamos comprometidos em oferecer solu&ccedil;&otilde;es inovadoras que combinam estilo e consci&ecirc;ncia ambiental.&nbsp;</span></span><span><span style="font-size: 14pt;">&Eacute; com grande entusiasmo que apresentamos</span><span style="font-size: 14pt;"> nossas bobinas de FILME STRETCH.</span></span></p>
-<p class="p1">&nbsp;</p>
-<p class="p1"><span style="color: #0f8bcf; font-size: 18pt;"><strong>Proteção, estabilidade e eficiência envolvidas em um unico rolo. Invista em nossos filmes stretch e garanta o sucesso de suas embalagens como nunca antes!</strong></span></p>
-<p class="p1">&nbsp;</p>
-<p><span style="font-size: 14pt;"> O stretch é um componente de embalagem amplamente utilizado na indústria para envolver produtos ou paletes com o objetivo de protegê-los e garantir a estabilidade durante o transporte e armazenamento.</span><span style="font-size: 14pt;">Essas bobinas são feitas de material plástico, geralmente polietileno de baixa densidade (PEBD) ou polietileno de alta densidade (PEAD), e são projetadas para esticar, envolver e aderir ao redor de objetos, criando uma embalagem segura e firme. Aqui está uma descrição técnica detalhada de uma bobina de filme stretch: </span></p>
-<p><span style="font-size: 14pt;">Combinamos design, elegante e funcionalidade excepcional, sem comprometer a qualidade ou o estilo. Nossos</span><span style="font-size: 14pt;">&nbsp;produtos sustent&aacute;veis s&atilde;o cuidadosamente pensados para atender &agrave;s suas necessidades di&aacute;rias.</span></p>
-<p><span style="font-size: 14pt;"><b>1 - Material:</b>
-    O filme stretch é fabricado principalmente a partir de polímeros de polietileno, que oferecem propriedades de estiramento e retenção de carga. O tipo de polietileno usado pode variar, com o PEBD (Polietileno de Baixa Densidade) sendo comum devido à sua flexibilidade e capacidade de estiramento.</span></p>
-<p><span style="font-size: 14pt;"><b>2 - Espessura:</b>
-    As bobinas de filme stretch estão disponíveis em várias espessuras, que são especificadas em milímetros (mm). As espessuras comuns variam de aproximadamente 0,15 a 0,30 mm, sendo que a escolha depende das necessidades específicas de embalagem e da resistência desejada.
-    </span></p>
-<p><span style="font-size: 14pt;"><b>3 - Largura:</b>
-    Nossas Bobinas de Filme Strech possuem largura padrão de 50 cm, embora tamanhos personalizados também possam ser fabricados conforme necessário.
-    </span></p>
-<p><span style="font-size: 14pt;"><b>4 - Estiramento:</b>
-    O filme stretch é projetado para esticar, permitindo que ele se adapte ao contorno do produto ou palete. O estiramento é geralmente expresso como uma porcentagem da sua largura inicial. Por exemplo, um filme stretch com um estiramento de 200% pode ser esticado para o dobro da sua largura original.
-    </span></p>
-<p><span style="font-size: 14pt;"><b>5 - Resistência à Tração:</b>
-    A resistência à tração é a capacidade do filme stretch de suportar forças de alongamento sem romper. Isso é importante para garantir a segurança da carga embalada. A resistência à tração é medida em pascals (Pa) e varia de acordo com a espessura e a qualidade do filme.
-    </span></p>
-<p><span style="font-size: 14pt;"><b>6 - Adesão:</b>
-    O filme stretch possui uma superfície externa aderente que permite que as camadas se fixem umas às outras quando enroladas sobre o produto ou palete. Isso cria uma embalagem segura e evita que a carga se desloque.
-    </span></p>
-<p><span style="font-size: 14pt;"><b>7 - Núcleo:</b>
-    A bobina de filme stretch é geralmente enrolada em torno de um núcleo de papel ou plástico que serve como suporte e facilita a aplicação da embalagem. Os tamanhos de núcleo comuns são de cerca de 7,6 cm (3 polegadas), mas também existem tamanhos menores e maiores.
-    </span></p>
-<p><span style="font-size: 14pt;"><b>8 - Transparência:</b>
-    A maioria das bobinas de filme stretch é transparente, o que permite a visualização dos produtos embalados. Isso é útil para a identificação rápida do conteúdo da embalagem e para a leitura de códigos de barras.
-    </span></p>
-<p class="p1">&nbsp;</p>
-<p class="p1"><span style="font-size: 14pt;">As bobinas de filme stretch desempenham um papel fundamental na otimização da logística e na proteção de produtos durante o transporte e armazenamento, tornando-se um componente essencial na cadeia de suprimentos de muitas indústrias. Sua versatilidade, resistência e capacidade de estiramento as tornam uma escolha popular para embalagem de mercadorias de diferentes tamanhos e formas.</span></p>
-<div class="banner">
-    <img src="images/Banner Stretch.png" width="1200" height="550">
-</div>
-</div>
-</div>
-</div>
-</section>
-<footer class="theme-footer">
-    <div class="container" style="margin-top: 0; padding: 25px 0;">
-        <div class="row">
-            <div class="col-md-3 col-sm-4 col-sm-12 logo" data-sr="wait 0.25s">
-                <a class="page-scroll" href="#scroll-top"><img class="img-responsive" src="images/logo_white.png"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-sm-12" data-sr="wait 0.5s">
-                <h3><i class="fa fa-map-marker fa-lg"></i> Endereço</h3>
-                <div class="info endereco">Rua Dr. Djalma Herculano Porto, 215A,  Distrito Industrial, Campina Grande-PB, 58411-560<br><br><i class="fa fa-search fa-lg"></i> <a href="https://www.google.com/maps?ll=-7.258878,-35.882193&z=17&t=m&hl=pt-BR" target="_blank">Consulte o Mapa</a></div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-sm-12 contact" data-sr="wait 0.75s">
-                <h3><i class="fa fa-phone fa-lg"></i> Contato</h3>
-                <div class="contato">(83) 3331-2929 <br> (83) 98111-1852 <br><br><i class="fa fa-phone-square fa-lg"></i> <a href="#" class="ligamos" data-toggle="modal" data-target="#ligamosParaVoce">Ligamos para você</a></div>
-            </div>
-            <div class="col-md-3 col-sm-12 col-sm-12 newsletter" data-sr="wait 1s">
-                <h3><i class="fa fa-envelope fa-lg"></i> Newsletter</h3>
-                <div role="form" class="wpcf7" id="wpcf7-f10-o5" lang="pt-BR" dir="ltr">
-<div class="screen-reader-response"></div>
-<form action="/#wpcf7-f10-o5" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="10">
-<input type="hidden" name="_wpcf7_version" value="4.4">
-<input type="hidden" name="_wpcf7_locale" value="pt_BR">
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10-o5">
-<input type="hidden" name="_wpnonce" value="88d73a07cf">
-</div>
-<div class="form-group nome"><input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" name="nome" type="text" value placeholder="Nome*" aria-invalid="false" aria-required="true" required></div>
-
-<div class="form-group email"><input class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" name="email" type="email" value placeholder="Email*" aria-invalid="false" aria-required="true" required></div>
-
-<div class="form-group"><div><input class="wpcf7-form-control wpcf7-submit btn-block btn btn-primary" type="submit" value="INSCREVER-SE"></div></div><div class="wpcf7-response-output wpcf7-display-none alert"></div></form></div>            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container" style="margin-top: 0;">
-            <div class="row" data-sr>
-                <div class="col-md-4">
-                    <span class="copyright">Copyright 2023 © Plastfort</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="https://www.instagram.com/plastfort/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a class="page-scroll" href="#section6"><i class="fa fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a class="page-scroll" href="#section1">Empresa</a>
-                        </li>
-                        <li><a class="page-scroll" href="#section4">Responsabilidade Social</a>
-                        </li>
-                    </ul>
+                    <p><span style="color: #0f8bcf; font-size: 18pt;"><span style="color: #0f8bcf;"><span
+                                    style="color: #0f8bcf;"><span style="color: #0f8bcf;"><strong><span
+                                                style="color: #0f8bcf;">FILMES
+                                                STRETCH&nbsp;</span></strong></span></span></span></span></p>
+                    <p class="p1"><span><span style="font-size: 14pt;"></span><span style="font-size: 14pt;">Nós
+                                da</span><span style="font-size: 14pt;"> PLASTFORT, estamos comprometidos em oferecer
+                                solu&ccedil;&otilde;es inovadoras que combinam estilo e consci&ecirc;ncia
+                                ambiental.&nbsp;</span></span><span><span style="font-size: 14pt;">&Eacute; com grande
+                                entusiasmo que apresentamos</span><span style="font-size: 14pt;"> nossas bobinas de
+                                FILME STRETCH.</span></span></p>
+                    <p class="p1">&nbsp;</p>
+                    <p class="p1"><span style="color: #0f8bcf; font-size: 18pt;"><strong>Proteção, estabilidade e
+                                eficiência envolvidas em um unico rolo. Invista em nossos filmes stretch e garanta o
+                                sucesso de suas embalagens como nunca antes!</strong></span></p>
+                    <p class="p1">&nbsp;</p>
+                    <p><span style="font-size: 14pt;"> O stretch é um componente de embalagem amplamente utilizado na
+                            indústria para envolver produtos ou paletes com o objetivo de protegê-los e garantir a
+                            estabilidade durante o transporte e armazenamento.</span><span
+                            style="font-size: 14pt;">Essas bobinas são feitas de material plástico, geralmente
+                            polietileno de baixa densidade (PEBD) ou polietileno de alta densidade (PEAD), e são
+                            projetadas para esticar, envolver e aderir ao redor de objetos, criando uma embalagem segura
+                            e firme. Aqui está uma descrição técnica detalhada de uma bobina de filme stretch: </span>
+                    </p>
+                    <p><span style="font-size: 14pt;">Combinamos design, elegante e funcionalidade excepcional, sem
+                            comprometer a qualidade ou o estilo. Nossos</span><span
+                            style="font-size: 14pt;">&nbsp;produtos sustent&aacute;veis s&atilde;o cuidadosamente
+                            pensados para atender &agrave;s suas necessidades di&aacute;rias.</span></p>
+                    <p><span style="font-size: 14pt;"><b>1 - Material:</b>
+                            O filme stretch é fabricado principalmente a partir de polímeros de polietileno, que
+                            oferecem propriedades de estiramento e retenção de carga. O tipo de polietileno usado pode
+                            variar, com o PEBD (Polietileno de Baixa Densidade) sendo comum devido à sua flexibilidade e
+                            capacidade de estiramento.</span></p>
+                    <p><span style="font-size: 14pt;"><b>2 - Espessura:</b>
+                            As bobinas de filme stretch estão disponíveis em várias espessuras, que são especificadas em
+                            milímetros (mm). As espessuras comuns variam de aproximadamente 0,15 a 0,30 mm, sendo que a
+                            escolha depende das necessidades específicas de embalagem e da resistência desejada.
+                        </span></p>
+                    <p><span style="font-size: 14pt;"><b>3 - Largura:</b>
+                            Nossas Bobinas de Filme Strech possuem largura padrão de 50 cm, embora tamanhos
+                            personalizados também possam ser fabricados conforme necessário.
+                        </span></p>
+                    <p><span style="font-size: 14pt;"><b>4 - Estiramento:</b>
+                            O filme stretch é projetado para esticar, permitindo que ele se adapte ao contorno do
+                            produto ou palete. O estiramento é geralmente expresso como uma porcentagem da sua largura
+                            inicial. Por exemplo, um filme stretch com um estiramento de 200% pode ser esticado para o
+                            dobro da sua largura original.
+                        </span></p>
+                    <p><span style="font-size: 14pt;"><b>5 - Resistência à Tração:</b>
+                            A resistência à tração é a capacidade do filme stretch de suportar forças de alongamento sem
+                            romper. Isso é importante para garantir a segurança da carga embalada. A resistência à
+                            tração é medida em pascals (Pa) e varia de acordo com a espessura e a qualidade do filme.
+                        </span></p>
+                    <p><span style="font-size: 14pt;"><b>6 - Adesão:</b>
+                            O filme stretch possui uma superfície externa aderente que permite que as camadas se fixem
+                            umas às outras quando enroladas sobre o produto ou palete. Isso cria uma embalagem segura e
+                            evita que a carga se desloque.
+                        </span></p>
+                    <p><span style="font-size: 14pt;"><b>7 - Núcleo:</b>
+                            A bobina de filme stretch é geralmente enrolada em torno de um núcleo de papel ou plástico
+                            que serve como suporte e facilita a aplicação da embalagem. Os tamanhos de núcleo comuns são
+                            de cerca de 7,6 cm (3 polegadas), mas também existem tamanhos menores e maiores.
+                        </span></p>
+                    <p><span style="font-size: 14pt;"><b>8 - Transparência:</b>
+                            A maioria das bobinas de filme stretch é transparente, o que permite a visualização dos
+                            produtos embalados. Isso é útil para a identificação rápida do conteúdo da embalagem e para
+                            a leitura de códigos de barras.
+                        </span></p>
+                    <p class="p1">&nbsp;</p>
+                    <p class="p1"><span style="font-size: 14pt;">As bobinas de filme stretch desempenham um papel
+                            fundamental na otimização da logística e na proteção de produtos durante o transporte e
+                            armazenamento, tornando-se um componente essencial na cadeia de suprimentos de muitas
+                            indústrias. Sua versatilidade, resistência e capacidade de estiramento as tornam uma escolha
+                            popular para embalagem de mercadorias de diferentes tamanhos e formas.</span></p>
+                    <div class="banner">
+                        <img src="images/Banner Stretch.png" width="1200" height="550">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <footer class="theme-footer">
+        <div class="container" style="margin-top: 0; padding: 25px 0;">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-sm-12 logo" data-sr="wait 0.25s">
+                    <a class="page-scroll" href="#scroll-top"><img class="img-responsive"
+                            src="images/logo_white.png"></a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-sm-12" data-sr="wait 0.5s">
+                    <h3><i class="fa fa-map-marker fa-lg"></i> Endereço</h3>
+                    <div class="info endereco">Rua Dr. Djalma Herculano Porto, 215A, Distrito Industrial, Campina
+                        Grande-PB, 58411-560<br><br><i class="fa fa-search fa-lg"></i> <a
+                            href="https://www.google.com/maps?ll=-7.258878,-35.882193&z=17&t=m&hl=pt-BR"
+                            target="_blank">Consulte o Mapa</a></div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-sm-12 contact" data-sr="wait 0.75s">
+                    <h3><i class="fa fa-phone fa-lg"></i> Contato</h3>
+                    <div class="contato">(83) 3331-2929 <br> (83) 98111-1852 <br><br><i
+                            class="fa fa-phone-square fa-lg"></i> <a href="#" class="ligamos" data-toggle="modal"
+                            data-target="#ligamosParaVoce">Ligamos para você</a></div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-sm-12 newsletter" data-sr="wait 1s">
+                    <h3><i class="fa fa-envelope fa-lg"></i> Newsletter</h3>
+                    <div role="form" class="wpcf7" id="wpcf7-f10-o5" lang="pt-BR" dir="ltr">
+                        <div class="screen-reader-response"></div>
+                        <form action="/#wpcf7-f10-o5" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <div style="display: none;">
+                                <input type="hidden" name="_wpcf7" value="10">
+                                <input type="hidden" name="_wpcf7_version" value="4.4">
+                                <input type="hidden" name="_wpcf7_locale" value="pt_BR">
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10-o5">
+                                <input type="hidden" name="_wpnonce" value="88d73a07cf">
+                            </div>
+                            <div class="form-group nome"><input
+                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                    name="nome" type="text" value placeholder="Nome*" aria-invalid="false"
+                                    aria-required="true" required></div>
 
-</footer>
+                            <div class="form-group email"><input
+                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                    name="email" type="email" value placeholder="Email*" aria-invalid="false"
+                                    aria-required="true" required></div>
 
-<script type="text/javascript" src="js/wp-embed.min.js"></script>
+                            <div class="form-group">
+                                <div><input class="wpcf7-form-control wpcf7-submit btn-block btn btn-primary"
+                                        type="submit" value="INSCREVER-SE"></div>
+                            </div>
+                            <div class="wpcf7-response-output wpcf7-display-none alert"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="margin-top: 0;">
+                <div class="row" data-sr>
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright 2023 © Plastfort</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.instagram.com/plastfort/" target="_blank"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li><a class="page-scroll" href="#section6"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li><a class="page-scroll" href="#section1">Empresa</a>
+                            </li>
+                            <li><a class="page-scroll" href="#section4">Responsabilidade Social</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
-<script type="text/javascript" src="js/count.js"></script>
-<script type="text/javascript"><!--
+    </footer>
+
+    <script type="text/javascript" src="js/wp-embed.min.js"></script>
+
+    <!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
+    <script type="text/javascript" src="js/count.js"></script>
+    <script type="text/javascript"><!--
 wm_custnum='c3b9a7ae7eda13da';
 wm_page_name='index.php';
 wm_group_name='/services/webpages/p/l/plastfort.com/public';
@@ -315,18 +398,17 @@ wm_track_alt='';
 wiredminds.count();
 // -->
 
-document.getElementById("numeroForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    var numero = parseInt(document.getElementById("numeroInput").value);
-    var mensagem = document.getElementById("mensagem");
+        document.getElementById("numeroForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var numero = parseInt(document.getElementById("numeroInput").value);
+            var mensagem = document.getElementById("mensagem");
 
-    if (!isNaN(numero) && numero >= 500 && numero <= 30000) {
-        mensagem.innerHTML = "Número válido: " + numero;
-        // Faça algo com o número válido aqui, se desejar
-    } else {
-        mensagem.innerHTML = "Quantidade Minima de Pedido Não Atendida.";
-    }
-});
-</script>
-<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
-</body></html>
+            if (!isNaN(numero) && numero >= 500 && numero <= 30000) {
+                mensagem.innerHTML = "Número válido: " + numero; // Faça algo
+        com o número válido aqui, se desejar
+            } else { mensagem.innerHTML = "Quantidade Minima de Pedido Não Atendida."; }
+        }); </script>
+        <!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
+</body>
+
+</html>
