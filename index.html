@@ -187,7 +187,7 @@
                         <li><a class="page-scroll no-transition" href="#empresa">Empresa</a></li>
                         <li class="dropdown">
                         <li>
-                            <a href="dropdown-toggle no-transition" href="#section2" data-toggle="dropdown"
+                            <a class="page-scroll no-transition" href="dropdown-toggle no-transition" href="#section2" data-toggle="dropdown"
                                 role="button" aria-haspopup="true" aria-expanded="false">Produtos<span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -827,7 +827,7 @@
     </section>
 
     <section class="home-section marketing-grid bg-light-gray" id="section3"
-        style="background: url(images/bg5.jpg) no-repeat; paddin-bottom: 100px;border-top: 1px solid #f0f0f0;border-bottom: 1px solid #f0f0f0;">
+        style="background: url(images/bg5.jpg) no-repeat; paddin-bottom: 100px; border-top: 1px solid #f0f0f0;border-bottom: 1px solid #f0f0f0;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -978,8 +978,7 @@
                                         <div><input
                                                 class="wpcf7-form-control wpcf7-submit btn-xl bg-dark btn btn-primary"
                                                 type="submit" value="SOLICITAR PRÉ-ORÇAMENTO"></div>
-                                    </div>
-
+                                    </div>   
                                 </div>
                                 <div class="wpcf7-response-output wpcf7-display-none alert"></div>
                             </form>
@@ -1010,6 +1009,7 @@
                                     <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-o3">
                                     <input type="hidden" name="_wpnonce" value="6a7e6806f0">
                                 </div>
+                                
                                 <div class="col-md-6">
 
                                     <div class="form-group nome"><input
@@ -1026,7 +1026,6 @@
                                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
                                             name="assunto" type="text" value placeholder="Assunto*" aria-invalid="false"
                                             aria-required="true" required></div>
-
                                 </div>
 
                                 <div class="col-md-6">
@@ -1035,17 +1034,14 @@
                                             class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control"
                                             name="mensagem" rows="4" placeholder="Mensagem*" aria-invalid="false"
                                             aria-required="true" required></textarea></div>
-
                                 </div>
 
                                 <div class="col-lg-12 text-center">
-
                                     <div class="form-group">
                                         <div><input
                                                 class="wpcf7-form-control wpcf7-submit btn-xl bg-blue-dark btn btn-primary"
                                                 type="submit" value="ENVIAR MENSAGEM"></div>
                                     </div>
-
                                 </div>
                                 <div class="wpcf7-response-output wpcf7-display-none alert"></div>
                             </form>
@@ -1055,9 +1051,6 @@
             </div>
         </div>
     </section>
-
-
-
     <section class="theme-map block-pointer" id="section8">
         <div class="container-fluid">
             <div class="row">
@@ -1147,7 +1140,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
     <script type="text/javascript" src="js/wp-embed.min.js"></script>
@@ -1170,10 +1162,8 @@ wiredminds.count();
 
             if (!isNaN(numero) && numero >= 500 && numero <= 30000) {
                 mensagem.innerHTML = "Número válido: " + numero; // Faça algo
-        com o número válido aqui, se desejar
-            } else { mensagem.innerHTML = "Quantidade Minima de Pedido Não Atendida."; }
+           } else { mensagem.innerHTML = "Quantidade Minima de Pedido Não Atendida. "; }
         }); </script>
         <!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
 </body>
-
 </html>
