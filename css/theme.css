@@ -870,7 +870,6 @@ body.admin-bar .navbar-fixed-top { /* admin-bar */
 }
 .home-featurette .lead {
     font-size: 20px;
-
 }
 @media(min-width:1200px) {
 .home-featurette .featurette-heading {
@@ -1666,3 +1665,8 @@ border: 1px;
     align-items: center;
     padding: 5px;
 }
+
+.lead {
+    text-align: justify;
+}
+
