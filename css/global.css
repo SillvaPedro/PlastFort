@@ -1,10 +1,8 @@
 @charset "UTF-8";
 /*!
- * StudioWeb Theme v1.0 (http://studioweb.art.br/theme)
  * Copyright 2012-2015 StudioWeb Mídia Integrada.
  * Description: Global HTML tags styles
  */
-
 
 /* HTML, BODY, P
 -------------------------------------------------- */
@@ -18,10 +16,6 @@ html, body {
 body {
 	font-family: 'Raleway', sans-serif;
 }
-
-p {
-}
-
 
 /* Links
 ------------------------- */
