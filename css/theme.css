@@ -1579,7 +1579,7 @@ section.clients img {
 ------------------------- */
 
 .theme-footer {
-	color: #fff;
+	color: white;
 	background-color: #0097da;
 	text-align: center;
 }
@@ -1588,7 +1588,7 @@ section.clients img {
 }
 .theme-footer .contact h3,
 .theme-footer .newsletter h3 {
-    color: #fff;
+    color: white;
     margin-top: 50px;
 }
 @media(min-width:768px) {
@@ -1607,6 +1607,7 @@ section.clients img {
 }
 .theme-footer .logo {
 	padding-top: 8px;
+    text-align: left;
 }
 .theme-footer .logo img {
     margin: 0 auto;
