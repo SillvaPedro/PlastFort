@@ -1607,7 +1607,6 @@ section.clients img {
 }
 .theme-footer .logo {
 	padding-top: 8px;
-    text-align: left;
 }
 .theme-footer .logo img {
     margin: 0 auto;
@@ -1639,7 +1638,7 @@ section.clients img {
 .footer-bottom {
     padding: 15px 0;
     background-color: #2c466f;
- }
+}
 
 .theme-footer .footer-bottom span.copyright {
     line-height: 40px;
@@ -1657,7 +1656,6 @@ select {
 height: 40px;
 width: 450px;
 border: 1px;
-
 }
 
 .logo{
