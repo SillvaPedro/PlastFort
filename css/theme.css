@@ -1593,9 +1593,6 @@ section.clients img {
 }
 @media(min-width:768px) {
 .theme-footer .contact h3,
-.theme-footer .newsletter h3 {
-    margin-top: 20px;
-}
 }
 .theme-footer a {
 	color: #fff;
@@ -1606,7 +1603,7 @@ section.clients img {
 	text-decoration: underline;
 }
 .theme-footer .logo {
-	padding-top: 8px;
+	padding-top: 10px;
 }
 .theme-footer .logo img {
     margin: 0 auto;
