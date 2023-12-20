@@ -893,3 +893,13 @@ body * .ls-container .ls-webkit-hack,
 .ls-forcehide {
 	display: none !important;
 }
+
+.sobre {
+	position: relative;
+	display: inline-block;
+	margin: 5px;
+	overflow: hidden;
+	transition: transform 0.3s;
+	transform: scale(1);
+
+}
