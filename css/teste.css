@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
     .tt-slideinfo-wrapper .tt-slideinfo:nth-child(2) {
         margin-left: -4px;
         margin-right: -4px
@@ -108,7 +107,7 @@
     height: 100%;
     opacity: .6;
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     -webkit-transition: opacity .2s;
     transition: opacity .2s;
@@ -132,9 +131,6 @@
     transition: height .13s
 }
 
-.tt-slideinfo .tt-item__bg .tt-item__bg-top:before {
-    top: 0
-}
 
 .tt-slideinfo .tt-item__bg .tt-item__bg-top:after {
     bottom: 0
